@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='MassDataHandlerLogFile.xsl'?>
+<LogFile titleName="a Log.xml" projectName="C:\Users\mabro\Desktop\a.xlsx" typeText="Type" messageText="Message" timeText="Time">
+  <LogEntry type="Warning" dateTime="11:07:19 PM">
+    <Message>Column 'Alarm text [en-US], Alarm text' is not supported on this device. All values in this column are ignored during import.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:07:19 PM">
+    <Message>Column 'FieldInfo [Alarm text]' is not supported on this device. All values in this column are ignored during import.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:07:19 PM">
+    <Message>Column 'Group' is not supported on this device. All values in this column are ignored during import.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:07:19 PM">
+    <Message>Column 'Report' is not supported on this device. All values in this column are ignored during import.</Message>
+  </LogEntry>
+  <LogEntry type="Information" dateTime="11:07:19 PM">
+    <Message>Import finished: 14 discrete alarms; 0 analog alarms</Message>
+  </LogEntry>
+</LogFile>

@@ -1,0 +1,148 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='MassDataHandlerLogFile.xsl'?>
+<LogFile titleName="HMITags Log_3.xml" projectName="C:\Users\mabro\Desktop\HMITags.xlsx" typeText="Type" messageText="Message" timeText="Time">
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Data_block_1.start_pb_HMI was not found in worksheet Hmi Tags, row 2, column Connection. Data_block_1.start_pb_HMI is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Data_block_1.emergency_pb_HMI was not found in worksheet Hmi Tags, row 3, column Connection. Data_block_1.emergency_pb_HMI is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Data_block_1.reset_pb_HMI was not found in worksheet Hmi Tags, row 4, column Connection. Data_block_1.reset_pb_HMI is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Data_block_1.stop_pb_HMI was not found in worksheet Hmi Tags, row 5, column Connection. Data_block_1.stop_pb_HMI is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag LOW_PRESSURE_SWITCH was not found in worksheet Hmi Tags, row 6, column Connection. LOW_PRESSURE_SWITCH is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CEDI_PUMP_SW was not found in worksheet Hmi Tags, row 7, column Connection. CEDI_PUMP_SW is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CEDI_ENABLE1_SW was not found in worksheet Hmi Tags, row 8, column Connection. CEDI_ENABLE1_SW is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CEDI_ENABLE2_SW was not found in worksheet Hmi Tags, row 9, column Connection. CEDI_ENABLE2_SW is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag FEED_PUMP_OL_LAMP was not found in worksheet Hmi Tags, row 10, column Connection. FEED_PUMP_OL_LAMP is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag FEED_PUMP_COMMAND was not found in worksheet Hmi Tags, row 11, column Connection. FEED_PUMP_COMMAND is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag HPP_PUMP_COMMAND was not found in worksheet Hmi Tags, row 12, column Connection. HPP_PUMP_COMMAND is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CIR_PUMP_COMMAND was not found in worksheet Hmi Tags, row 13, column Connection. CIR_PUMP_COMMAND is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag DEGASING_P_COMMAND was not found in worksheet Hmi Tags, row 14, column Connection. DEGASING_P_COMMAND is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CEDI_PUMP_COMMAND was not found in worksheet Hmi Tags, row 15, column Connection. CEDI_PUMP_COMMAND is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CIR_T_HIGH was not found in worksheet Hmi Tags, row 16, column Connection. CIR_T_HIGH is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag degasing_tank_hi_hi was not found in worksheet Hmi Tags, row 17, column Connection. degasing_tank_hi_hi is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag degassing_t_low_level was not found in worksheet Hmi Tags, row 18, column Connection. degassing_t_low_level is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CEDI_PWR_1_ON was not found in worksheet Hmi Tags, row 19, column Connection. CEDI_PWR_1_ON is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CEDI_PWR_2_ON was not found in worksheet Hmi Tags, row 20, column Connection. CEDI_PWR_2_ON is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag TRIP_PLANT was not found in worksheet Hmi Tags, row 21, column Connection. TRIP_PLANT is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag PHASE_FAULT_M was not found in worksheet Hmi Tags, row 22, column Connection. PHASE_FAULT_M is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag feed_p_ol was not found in worksheet Hmi Tags, row 23, column Connection. feed_p_ol is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag hpp_ol was not found in worksheet Hmi Tags, row 24, column Connection. hpp_ol is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Degas_PUMP_OL was not found in worksheet Hmi Tags, row 25, column Connection. Degas_PUMP_OL is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CIR_PUMP_OL was not found in worksheet Hmi Tags, row 26, column Connection. CIR_PUMP_OL is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CEDI_PUMP_OL was not found in worksheet Hmi Tags, row 27, column Connection. CEDI_PUMP_OL is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag ORP_HIGH was not found in worksheet Hmi Tags, row 28, column Connection. ORP_HIGH is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Degassing_T_LO_LV was not found in worksheet Hmi Tags, row 29, column Connection. Degassing_T_LO_LV is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Suck_back_t_ll_left was not found in worksheet Hmi Tags, row 30, column Connection. Suck_back_t_ll_left is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Suck_back_t_ll_Right was not found in worksheet Hmi Tags, row 31, column Connection. Suck_back_t_ll_Right is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag LOW_FLOW_CEDI_SW was not found in worksheet Hmi Tags, row 32, column Connection. LOW_FLOW_CEDI_SW is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag START_PLANT_LAMP was not found in worksheet Hmi Tags, row 33, column Connection. START_PLANT_LAMP is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag STOP_PLANT_LAMP was not found in worksheet Hmi Tags, row 34, column Connection. STOP_PLANT_LAMP is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Phase_fault was not found in worksheet Hmi Tags, row 35, column Connection. Phase_fault is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag hpp_hps was not found in worksheet Hmi Tags, row 36, column Connection. hpp_hps is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag hpp_lps was not found in worksheet Hmi Tags, row 37, column Connection. hpp_lps is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Alarm_Word_1 was not found in worksheet Hmi Tags, row 38, column Connection. Alarm_Word_1 is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Alarm_Word_2 was not found in worksheet Hmi Tags, row 39, column Connection. Alarm_Word_2 is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Feed_Timer_ET was not found in worksheet Hmi Tags, row 40, column Connection. Feed_Timer_ET is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag HP_Timer_ET was not found in worksheet Hmi Tags, row 41, column Connection. HP_Timer_ET is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Degas_Timer_ET was not found in worksheet Hmi Tags, row 42, column Connection. Degas_Timer_ET is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CIR_Timer_ET was not found in worksheet Hmi Tags, row 43, column Connection. CIR_Timer_ET is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Feed_Timer_Sec was not found in worksheet Hmi Tags, row 44, column Connection. Feed_Timer_Sec is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag HP_Timer_Sec was not found in worksheet Hmi Tags, row 45, column Connection. HP_Timer_Sec is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag Degas_Timer_Sec was not found in worksheet Hmi Tags, row 46, column Connection. Degas_Timer_Sec is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag CIR_Timer_Sec was not found in worksheet Hmi Tags, row 47, column Connection. CIR_Timer_Sec is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="7:40:04 PM">
+    <Message>The value HMI_Connection_1 of HMI tag condition_cedi was not found in worksheet Hmi Tags, row 48, column Connection. condition_cedi is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Information" dateTime="7:40:04 PM">
+    <Message>Import finished: 47 tag(s) imported.</Message>
+  </LogEntry>
+</LogFile>

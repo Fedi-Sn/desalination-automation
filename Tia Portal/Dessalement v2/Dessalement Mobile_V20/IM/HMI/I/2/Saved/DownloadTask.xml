@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<DownloadTask xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ProjectInfo ProjectId="1f83a8c1-1f94-4088-8506-550629333902" ESProjectName="Dessalement Mobile_V20" ESDeviceName="HMI_RT_2" RtProjectFolderName="Dessalement Mobile_V20.PC-System_1[SIMATIC PC station - WinCC Unified PC RT]" RtProjectName="Dessalement Mobile_V20.PC-System_1[SIMATIC PC station - WinCC Unified PC RT]" DeviceType="SIMATIC PC station - WinCC Unified PC RT" DeviceVersion="20.0.0.0" CreationTime="04/01/2026 22:45:33" FirmwareFileName="" RuntimeFileName="" PRCV="6.0.0.1" RTCV="0.0.0.0" RTReleaseNo="20.0.0.0" ImageReleaseNo="0.0.0.0" />
+  <FullDownload type="ADMINDATA">UMCData.json</FullDownload>
+  <FullDownload>{894AD6A7-6155-424B-AA9D-7E77FD174D24}.zip</FullDownload>
+  <FullDownload>{9BA2ACF0-39B3-465B-8E10-28301ED605C5}.zip</FullDownload>
+  <FullDownload>config\config.level</FullDownload>
+  <FullDownload>fonts\SISAN03.ttf</FullDownload>
+  <FullDownload>fonts\SISAN03.woff2</FullDownload>
+  <FullDownload>general\cds.rdf</FullDownload>
+  <FullDownload>general\ChromIdentification.rdf</FullDownload>
+  <FullDownload>general\config_AlertClass.rdf</FullDownload>
+  <FullDownload>general\config_AlertHandler.rdf</FullDownload>
+  <FullDownload>general\config_DistributionInfo.rdf</FullDownload>
+  <FullDownload>general\config_DpValue.rdf</FullDownload>
+  <FullDownload>general\config_HmiRuntime.rdf</FullDownload>
+  <FullDownload>general\config_InitialValue.rdf</FullDownload>
+  <FullDownload>general\config_LicenseCounter.rdf</FullDownload>
+  <FullDownload>general\config_PeripheralAddress.rdf</FullDownload>
+  <FullDownload>general\config_SecureConnAttributes.rdf</FullDownload>
+  <FullDownload>general\config_Smoothing.rdf</FullDownload>
+  <FullDownload>general\dpIdentification.rdf</FullDownload>
+  <FullDownload>general\fontLocatorList.rdf</FullDownload>
+  <FullDownload>general\main.rdf</FullDownload>
+  <FullDownload>general\ProcessDiagnosticsDnnData.rdf</FullDownload>
+  <FullDownload>general\style_144.rdf</FullDownload>
+  <FullDownload>general\style_244.rdf</FullDownload>
+  <FullDownload>general\style_47.rdf</FullDownload>
+  <FullDownload>general\SystemDiagnosticsDnnData.rdf</FullDownload>
+  <FullDownload>general\textLibrary_143_1033.rdf</FullDownload>
+  <FullDownload>general\textLibrary_2_1033.rdf</FullDownload>
+  <FullDownload>general\textListLibrary.rdf</FullDownload>
+  <FullDownload>screens\screen_345.rdf</FullDownload>
+  <FullDownload>screenwindowlayouts\screenWindowLayout_403.rdf</FullDownload>
+  <FullDownload>system\ES2RTID.rdf</FullDownload>
+  <FullDownload>system\ProjectCharacteristics.rdf</FullDownload>
+</DownloadTask>

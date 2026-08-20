@@ -1,0 +1,2811 @@
+[
+    {
+        "id": "b0164a82aa110d12",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "tab_flux2",
+        "type": "tab",
+        "label": "Flux 2",
+        "disabled": false,
+        "info": "Architecture Simulation + IoT"
+    },
+    {
+        "id": "tab_flux3",
+        "type": "tab",
+        "label": "Flux 3",
+        "disabled": false,
+        "info": "OPC UA Simulation"
+    },
+    {
+        "id": "tab_flux4",
+        "type": "tab",
+        "label": "Flux 4",
+        "disabled": false,
+        "info": "Notifications & Alertes Telegram"
+    },
+    {
+        "id": "5e056b6d48b86e68",
+        "type": "tab",
+        "label": "Flux 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9197102bbb7e42ab",
+        "type": "tab",
+        "label": "Flux 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3f417203fe8918de",
+        "type": "group",
+        "z": "9197102bbb7e42ab",
+        "name": "MW",
+        "style": {
+            "fill": "#ffbfbf",
+            "label": true
+        },
+        "nodes": [
+            "b46911ec9d18a569",
+            "22866ac41e1d7feb",
+            "422dea1a67b37847",
+            "480174b03da940bc",
+            "0102ba1a1dedfc56",
+            "45e1977a55e5b6bb",
+            "7acb470dbbe34f1e",
+            "2f7e0af2af3e21be",
+            "d75002965260fde9",
+            "1383b26c1007a6bc",
+            "d0c943db3f790af0",
+            "7447323c658c3774",
+            "bf1ab88a6cc34e98",
+            "9d2698b51d6ea29a",
+            "e50d683edc3ecd2c",
+            "64df5a76c425c6e6",
+            "7e9a0d98ea62cff7",
+            "f3b20789d8e7f1d6",
+            "5f27b1f3c88a459c",
+            "f63ffc313e69f1db",
+            "0f0843ff2e856dee"
+        ],
+        "x": 34,
+        "y": 79,
+        "w": 1632,
+        "h": 322
+    },
+    {
+        "id": "9c40d6977d01c785",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "PLC-Tags",
+        "vartable": [
+            {
+                "addr": "I0.0",
+                "name": "Start_pb"
+            },
+            {
+                "addr": "I0.1",
+                "name": "Stop_pb"
+            },
+            {
+                "addr": "I0.2",
+                "name": "Reset_pb"
+            },
+            {
+                "addr": "I0.3",
+                "name": "Emergency_pb"
+            },
+            {
+                "addr": "I0.4",
+                "name": "Phase_fault"
+            },
+            {
+                "addr": "I0.5",
+                "name": "Feed_lps"
+            },
+            {
+                "addr": "I0.6",
+                "name": "Feed_p_sw"
+            },
+            {
+                "addr": "I0.7",
+                "name": "Feed_p_ol"
+            },
+            {
+                "addr": "I1.0",
+                "name": "diff_cart_sw"
+            },
+            {
+                "addr": "I1.1",
+                "name": "hpp_lps"
+            },
+            {
+                "addr": "I1.2",
+                "name": "hpp_hps"
+            },
+            {
+                "addr": "I1.3",
+                "name": "hpp_sw"
+            },
+            {
+                "addr": "I1.4",
+                "name": "hpp_ol"
+            },
+            {
+                "addr": "I1.5",
+                "name": "Suck_back_t_ll_left"
+            },
+            {
+                "addr": "I1.6",
+                "name": "Suck_back_t_ll_right"
+            },
+            {
+                "addr": "I1.7",
+                "name": "Degassing_T_LO_LV"
+            },
+            {
+                "addr": "I2.0",
+                "name": "Degas_PUMP_SW"
+            },
+            {
+                "addr": "I2.1",
+                "name": "Degas_PUMP_OL"
+            },
+            {
+                "addr": "I2.2",
+                "name": "CEDI_PUMP_SW"
+            },
+            {
+                "addr": "I2.3",
+                "name": "CEDI_PUMP_OL"
+            },
+            {
+                "addr": "I2.4",
+                "name": "CEDI_ENABLE1_SW"
+            },
+            {
+                "addr": "I2.5",
+                "name": "CEDI_ENABLE2_SW"
+            },
+            {
+                "addr": "I2.6",
+                "name": "CEDI_LOW_FLOW_SW"
+            },
+            {
+                "addr": "I3.0",
+                "name": "ORP_HIGH"
+            },
+            {
+                "addr": "I3.1",
+                "name": "CIR_PUMP_SW"
+            },
+            {
+                "addr": "I3.2",
+                "name": "CIR_PUMP_OL"
+            },
+            {
+                "addr": "I3.3",
+                "name": "PRECL_DP_SW"
+            },
+            {
+                "addr": "I3.4",
+                "name": "ACID_DP_SW"
+            },
+            {
+                "addr": "I3.5",
+                "name": "SMBS_DP_SW"
+            },
+            {
+                "addr": "I3.6",
+                "name": "SYS_AUTO_SW"
+            },
+            {
+                "addr": "I4.0",
+                "name": "SUCK_BACK_HI_DEGAING"
+            },
+            {
+                "addr": "I4.1",
+                "name": "CIR_T_HIGH"
+            },
+            {
+                "addr": "I4.3",
+                "name": "LOW_FLOW_CEDI_SW"
+            },
+            {
+                "addr": "I4.4",
+                "name": "degasing_tank_hi_hi"
+            },
+            {
+                "addr": "M10.1",
+                "name": "ALWAYS_ON"
+            },
+            {
+                "addr": "M10.2",
+                "name": "ALWAYS_OFF"
+            },
+            {
+                "addr": "M20.0",
+                "name": "START_UP"
+            },
+            {
+                "addr": "M20.1",
+                "name": "STOP_PLANT"
+            },
+            {
+                "addr": "M20.5",
+                "name": "TRIP_PLANT"
+            },
+            {
+                "addr": "M20.6",
+                "name": "PHASE_FAULT_M"
+            },
+            {
+                "addr": "M23.0",
+                "name": "Delay_lowpressure_hpp"
+            },
+            {
+                "addr": "M23.1",
+                "name": "cir_high_level_hpp"
+            },
+            {
+                "addr": "M23.3",
+                "name": "Condition_hpp_cir_high"
+            },
+            {
+                "addr": "M24.0",
+                "name": "SW_FEED_P"
+            },
+            {
+                "addr": "M24.1",
+                "name": "SW_HPP"
+            },
+            {
+                "addr": "M24.2",
+                "name": "SW_CIR"
+            },
+            {
+                "addr": "M24.3",
+                "name": "SW_DEGASING"
+            },
+            {
+                "addr": "M24.4",
+                "name": "SW_CEDI"
+            },
+            {
+                "addr": "M50.0",
+                "name": "Pressure_ok_hpp"
+            },
+            {
+                "addr": "M50.1",
+                "name": "condition_hpp"
+            },
+            {
+                "addr": "M50.2",
+                "name": "LEVEL_OK_CIR"
+            },
+            {
+                "addr": "M50.3",
+                "name": "CONDITION_CIR_PUMP"
+            },
+            {
+                "addr": "M50.4",
+                "name": "level_ok_degasing"
+            },
+            {
+                "addr": "M50.5",
+                "name": "condition_degasing"
+            },
+            {
+                "addr": "M50.6",
+                "name": "LOW_PRESSURE_SWITCH"
+            },
+            {
+                "addr": "M50.7",
+                "name": "condition_feed_pump"
+            },
+            {
+                "addr": "M51.0",
+                "name": "level_degasing_tank_ok"
+            },
+            {
+                "addr": "M51.1",
+                "name": "condition_cedi"
+            },
+            {
+                "addr": "Q0.0",
+                "name": "START_PLANT_LAMP"
+            },
+            {
+                "addr": "Q0.1",
+                "name": "STOP_PLANT_LAMP"
+            },
+            {
+                "addr": "Q0.2",
+                "name": "TRIP_LAMP"
+            },
+            {
+                "addr": "Q0.3",
+                "name": "phase_failure_lamp"
+            },
+            {
+                "addr": "Q0.4",
+                "name": "orp_low_lamp"
+            },
+            {
+                "addr": "Q0.5",
+                "name": "FEED_PUMP_COMMAND"
+            },
+            {
+                "addr": "Q0.6",
+                "name": "FEED_PUMP_OL_LAMP"
+            },
+            {
+                "addr": "Q0.7",
+                "name": "degassing_t_low_level"
+            },
+            {
+                "addr": "Q1.3",
+                "name": "HPP_PUMP_COMMAND"
+            },
+            {
+                "addr": "Q1.4",
+                "name": "HPP_PUMP_OL_LAMP"
+            },
+            {
+                "addr": "Q1.5",
+                "name": "SB_TANK_LL_LAMP"
+            },
+            {
+                "addr": "Q1.6",
+                "name": "DEGASING_P_COMMAND"
+            },
+            {
+                "addr": "Q1.7",
+                "name": "DEGASING_OL_LAMP"
+            },
+            {
+                "addr": "Q2.0",
+                "name": "CEDI_LOW_LAMP_FLOW"
+            },
+            {
+                "addr": "Q2.2",
+                "name": "CEDI_PUMP_COMMAND"
+            },
+            {
+                "addr": "Q2.3",
+                "name": "CEDI_PUMP_OL_LAMP"
+            },
+            {
+                "addr": "Q2.4",
+                "name": "SB_TANK_LL_CIR_LAMP"
+            },
+            {
+                "addr": "Q2.5",
+                "name": "CIR_PUMP_COMMAND"
+            },
+            {
+                "addr": "Q2.6",
+                "name": "CIR_OL_LAMP"
+            },
+            {
+                "addr": "Q2.7",
+                "name": "ACID_DP_RUN"
+            },
+            {
+                "addr": "Q3.0",
+                "name": "PRECL_DP_RUN"
+            },
+            {
+                "addr": "Q3.1",
+                "name": "SMBS_DP_RUN"
+            },
+            {
+                "addr": "Q3.2",
+                "name": "CEDI_PWR_1_ON"
+            },
+            {
+                "addr": "Q3.3",
+                "name": "CEDI_PWR_2_ON"
+            }
+        ]
+    },
+    {
+        "id": "s7_config",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.10",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "500",
+        "timeout": "1000",
+        "name": "S7-300 Demi Water Plant",
+        "vartable": [
+            {
+                "addr": "I0.0",
+                "name": "start_pb"
+            },
+            {
+                "addr": "I0.1",
+                "name": "stop_pb"
+            },
+            {
+                "addr": "I0.2",
+                "name": "reset_pb"
+            },
+            {
+                "addr": "I0.3",
+                "name": "emergency_pb"
+            },
+            {
+                "addr": "I0.5",
+                "name": "feed_lps"
+            },
+            {
+                "addr": "I0.6",
+                "name": "feed_p_sw"
+            },
+            {
+                "addr": "I0.7",
+                "name": "feed_p_ol"
+            },
+            {
+                "addr": "I3.6",
+                "name": "SYS_AUTO_SW"
+            },
+            {
+                "addr": "M20.0",
+                "name": "START_UP"
+            },
+            {
+                "addr": "M20.1",
+                "name": "STOP_PLANT"
+            },
+            {
+                "addr": "M20.5",
+                "name": "TRIP_PLANT"
+            },
+            {
+                "addr": "M24.0",
+                "name": "SW_FEED_P"
+            },
+            {
+                "addr": "M50.6",
+                "name": "LOW_PRESSURE_SWITCH"
+            },
+            {
+                "addr": "M50.7",
+                "name": "condition_feed_pump"
+            },
+            {
+                "addr": "Q0.5",
+                "name": "FEED_PUMP_COMMAND"
+            },
+            {
+                "addr": "Q0.6",
+                "name": "FEED_PUMP_OL_LAMP"
+            },
+            {
+                "addr": "DB2,X0.0",
+                "name": "Start_pb_HMI"
+            },
+            {
+                "addr": "DB2,X0.1",
+                "name": "Stop_pb_HMI"
+            },
+            {
+                "addr": "DB2,X0.2",
+                "name": "Reset_pb_HMI"
+            },
+            {
+                "addr": "DB2,X0.3",
+                "name": "Emergency_pb_HMI"
+            },
+            {
+                "addr": "DB2,X0.5",
+                "name": "Feed_p_sw_HMI"
+            }
+        ]
+    },
+    {
+        "id": "ui_tab_main",
+        "type": "ui_tab",
+        "name": "Station Déminéralisation",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui_group_feedpump",
+        "type": "ui_group",
+        "name": "Feed Pump - Pompe Alimentation",
+        "tab": "ui_tab_main",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b43ed0418f9398cd",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "06a5df3aa6f074a8",
+        "type": "OpcUa-Endpoint",
+        "name": "dessalement mobile",
+        "endpoint": "opc.tcp://192.168.1.100:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "mqtt_broker_thingsboard",
+        "type": "mqtt-broker",
+        "name": "demo.thingsboard.io",
+        "broker": "localhost",
+        "port": "1885",
+        "clientid": "nodered-dessalment",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "v1/devices/me/telemetry",
+        "birthQos": "1",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "opcua_server_endpoint",
+        "type": "OpcUa-Endpoint",
+        "name": "Local OPC UA",
+        "endpoint": "opc.tcp://localhost:54845/",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "telegram_bot_config",
+        "type": "telegram bot",
+        "botname": "Dessalment Mobile Bot",
+        "usernames": "",
+        "chatids": "6626543426",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "",
+        "localbotport": "8443",
+        "publicbotport": "",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "mqtt_broker",
+        "type": "mqtt-broker",
+        "name": "ThingsBoard MQTT",
+        "broker": "demo.thingsboard.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "884eb97760416cdb",
+        "type": "mqtt-broker",
+        "name": "ThingsBoard MQTT",
+        "broker": "localhost",
+        "port": "1885",
+        "clientid": "nodered_dessalement",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "v1/devices/me/telemetry",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "34b45f43fc18943b",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Local",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "nodered_multitopic",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1bc2abe7f9459d9b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.170",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "68ceeba289843390",
+        "type": "telegram bot",
+        "botname": "bot STEG",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "addressfamily": "4",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "0.0.0.0",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "db",
+        "type": "sqlitedb",
+        "db": "C:\\\\Users\\\\fedi\\\\COURBE\\\\MW.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "55d535432c54d811",
+        "type": "OpcUa-Item",
+        "z": "b0164a82aa110d12",
+        "item": "ns=3;s=\"DB_IoT\".\"Pression_HP_Pub\"",
+        "datatype": "Double",
+        "value": "",
+        "name": "Pression_HP",
+        "x": 470,
+        "y": 240,
+        "wires": [
+            [
+                "4e6c9bc4392b088e"
+            ]
+        ]
+    },
+    {
+        "id": "4e6c9bc4392b088e",
+        "type": "debug",
+        "z": "b0164a82aa110d12",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "82137d74d5b2f53c",
+        "type": "OpcUa-Client",
+        "z": "b0164a82aa110d12",
+        "endpoint": "06a5df3aa6f074a8",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "",
+        "applicationName": "",
+        "applicationUri": "urn:NodeOPCUAClient",
+        "x": 100,
+        "y": 380,
+        "wires": [
+            [
+                "55d535432c54d811"
+            ],
+            [
+                "24637fa5e4ce7142",
+                "a06e9cec7bc25c32"
+            ],
+            [
+                "d8bfe16a1e828f51",
+                "62b312d5fd02d877"
+            ]
+        ]
+    },
+    {
+        "id": "cc60c7d7cffba83a",
+        "type": "comment",
+        "z": "b0164a82aa110d12",
+        "name": "Architecture PLC Réel",
+        "info": "FLUX 1 - Connexion PLC Réel\n════════════════════════════\n• OPC UA Client → S7-1200 (192.168.1.100:4840)\n• Lecture directe des capteurs\n• Simulation individuelle (mode test)\n\n⚠ PLC non connecté (mode simulation active dans Flux 2)\n✅ Prêt pour déploiement réel",
+        "x": 420,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "24637fa5e4ce7142",
+        "type": "OpcUa-Item",
+        "z": "b0164a82aa110d12",
+        "item": "ns=3;s=\"DB_IoT\".\"Debit_Pub\"",
+        "datatype": "Double",
+        "value": "",
+        "name": "Debit_Feed",
+        "x": 470,
+        "y": 320,
+        "wires": [
+            [
+                "4e6c9bc4392b088e"
+            ]
+        ]
+    },
+    {
+        "id": "a06e9cec7bc25c32",
+        "type": "OpcUa-Item",
+        "z": "b0164a82aa110d12",
+        "item": "ns=3;s=\"DB_IoT\".\"Salinite_Pub\"",
+        "datatype": "Double",
+        "value": "",
+        "name": "Salinite",
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "4e6c9bc4392b088e"
+            ]
+        ]
+    },
+    {
+        "id": "d8bfe16a1e828f51",
+        "type": "OpcUa-Item",
+        "z": "b0164a82aa110d12",
+        "item": "ns=3;s=\"DB_IoT\".\"Niveau_Pub\"",
+        "datatype": "Double",
+        "value": "",
+        "name": "Niveau",
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "4e6c9bc4392b088e"
+            ]
+        ]
+    },
+    {
+        "id": "62b312d5fd02d877",
+        "type": "OpcUa-Item",
+        "z": "b0164a82aa110d12",
+        "item": "ns=3;s=\"DB_IoT\".\"Temperature_Pub\"",
+        "datatype": "Double",
+        "value": "",
+        "name": "Temperature",
+        "x": 470,
+        "y": 560,
+        "wires": [
+            [
+                "4e6c9bc4392b088e"
+            ]
+        ]
+    },
+    {
+        "id": "comment_arch",
+        "type": "comment",
+        "z": "tab_flux2",
+        "name": "Architecture Simulation + IoT",
+        "info": "",
+        "x": 510,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "s7_read",
+        "type": "s7 in",
+        "z": "tab_flux2",
+        "endpoint": "9c40d6977d01c785",
+        "mode": "single",
+        "variable": "DB13",
+        "diff": false,
+        "name": "Lire DB13 S7-1200",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "debug_s7"
+            ]
+        ]
+    },
+    {
+        "id": "debug_s7",
+        "type": "debug",
+        "z": "tab_flux2",
+        "name": "Voir les valeurs S7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 800,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "inject_timer",
+        "type": "inject",
+        "z": "tab_flux2",
+        "name": "Toutes les 2 sec",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "func_simulate"
+            ]
+        ]
+    },
+    {
+        "id": "func_simulate",
+        "type": "function",
+        "z": "tab_flux2",
+        "name": "Simuler capteurs (variation)",
+        "func": "// Simulate sensor values with variation\nvar t = Date.now() / 1000;\n\nvar pression_hp = 5 + Math.sin(t/30) * 1.5 + (Math.random()-0.5)*0.3;\nvar debit_feed = 15 + Math.sin(t/20) * 3 + (Math.random()-0.5)*0.5;\nvar salinite = 350 + Math.sin(t/60) * 50 + (Math.random()-0.5)*20;\nvar niveau = 60 + Math.sin(t/45) * 15 + (Math.random()-0.5)*2;\nvar temperature = 26 + Math.sin(t/120) * 2 + (Math.random()-0.5)*0.3;\n\nmsg.payload = {\n    pression_hp: parseFloat(pression_hp.toFixed(2)),\n    debit_feed: parseFloat(debit_feed.toFixed(2)),\n    salinite: parseFloat(salinite.toFixed(1)),\n    niveau: parseFloat(niveau.toFixed(1)),\n    temperature: parseFloat(temperature.toFixed(1)),\n    rendement: parseFloat((debit_feed/20*100).toFixed(1))\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 480,
+        "wires": [
+            [
+                "http_post",
+                "debug_simulated",
+                "func_format_mqtt",
+                "func_alarmes",
+                "func_split_mqtt"
+            ]
+        ]
+    },
+    {
+        "id": "http_post",
+        "type": "http request",
+        "z": "tab_flux2",
+        "name": "POST ThingsBoard HTTP",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:8080/api/v1/nK9egO7j7LcPfAaW7PDr/telemetry",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 510,
+        "y": 380,
+        "wires": [
+            [
+                "debug_http_response"
+            ]
+        ]
+    },
+    {
+        "id": "debug_http_response",
+        "type": "debug",
+        "z": "tab_flux2",
+        "name": "Réponse HTTP",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 840,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "debug_simulated",
+        "type": "debug",
+        "z": "tab_flux2",
+        "name": "Voir valeurs simulées",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "func_format_mqtt",
+        "type": "function",
+        "z": "tab_flux2",
+        "name": "Format MQTT",
+        "func": "// Format payload for MQTT\nmsg.payload = JSON.stringify(msg.payload);\nmsg.topic = \"v1/devices/me/telemetry\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 520,
+        "wires": [
+            [
+                "mqtt_thingsboard"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_thingsboard",
+        "type": "mqtt out",
+        "z": "tab_flux2",
+        "name": "MQTT vers ThingsBoard",
+        "topic": "v1/devices/me/telemetry",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt_broker_thingsboard",
+        "x": 820,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "func_alarmes",
+        "type": "function",
+        "z": "tab_flux2",
+        "name": "Alarmes Détaillées",
+        "func": "var data = msg.payload;\nvar alarmes = [];\nvar niveau = \"NORMAL\";\nvar etat = \"STOPPING\";\n\n// Check alarm conditions\nif (data.pression_hp > 60) {\n    alarmes.push({ type: \"PRESSION_HP\", valeur: data.pression_hp, seuil: 60 });\n    niveau = \"WARNING\";\n}\nif (data.debit_feed < 2) {\n    alarmes.push({ type: \"DEBIT_FAIBLE\", valeur: data.debit_feed, seuil: 2 });\n    niveau = \"CRITICAL\";\n}\nif (data.temperature > 35) {\n    alarmes.push({ type: \"SURCHAUFFE\", valeur: data.temperature, seuil: 35 });\n    niveau = \"WARNING\";\n}\nif (data.salinite > 380) {\n    alarmes.push({ type: \"SALINITE_HAUTE\", valeur: data.salinite, seuil: 380 });\n    niveau = \"WARNING\";\n}\n\nif (alarmes.length === 0) {\n    etat = \"STOPPING\";\n} else {\n    etat = \"ALARME\";\n}\n\nmsg.payload = {\n    niveau: niveau,\n    count: alarmes.length,\n    details: alarmes,\n    etat: etat,\n    timestamp: new Date().toTimeString().slice(0,8)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 580,
+        "wires": [
+            [
+                "debug_alarmes"
+            ]
+        ]
+    },
+    {
+        "id": "debug_alarmes",
+        "type": "debug",
+        "z": "tab_flux2",
+        "name": "Voir Alarmes",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 790,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "func_split_mqtt",
+        "type": "function",
+        "z": "tab_flux2",
+        "name": "Split Topics MQTT",
+        "func": "// Split payload into individual MQTT topics\nvar data = msg.payload;\nvar messages = [];\n\nObject.keys(data).forEach(function(key) {\n    messages.push({\n        payload: String(data[key]),\n        topic: \"capteurs/\" + key\n    });\n});\n\nreturn [messages];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 640,
+        "wires": [
+            [
+                "mqtt_multitopic"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_multitopic",
+        "type": "mqtt out",
+        "z": "tab_flux2",
+        "name": "MQTT Multi-Topic",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt_broker_thingsboard",
+        "x": 810,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "inject_cmd",
+        "type": "inject",
+        "z": "tab_flux2",
+        "name": "Test CMD Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmd",
+        "payload": "{\"command\":\"START\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 720,
+        "wires": [
+            [
+                "func_cmd"
+            ]
+        ]
+    },
+    {
+        "id": "func_cmd",
+        "type": "function",
+        "z": "tab_flux2",
+        "name": "Traiter CMD Web",
+        "func": "// Process web command\nvar cmd = msg.payload;\nvar response = {};\n\nif (cmd.command === \"START\") {\n    response = { status: \"OK\", action: \"STARTED\", timestamp: Date.now() };\n} else if (cmd.command === \"STOP\") {\n    response = { status: \"OK\", action: \"STOPPED\", timestamp: Date.now() };\n} else {\n    response = { status: \"ERROR\", message: \"Unknown command\", timestamp: Date.now() };\n}\n\nmsg.payload = response;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 720,
+        "wires": [
+            [
+                "debug_cmd"
+            ]
+        ]
+    },
+    {
+        "id": "debug_cmd",
+        "type": "debug",
+        "z": "tab_flux2",
+        "name": "Cmd",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 800,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "comment_opcua",
+        "type": "comment",
+        "z": "tab_flux3",
+        "name": "OPC UA Simulation",
+        "info": "",
+        "x": 460,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "inject_horodatage",
+        "type": "inject",
+        "z": "tab_flux3",
+        "name": "horodatage",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 165,
+        "y": 240,
+        "wires": [
+            [
+                "opcua_browser"
+            ]
+        ]
+    },
+    {
+        "id": "opcua_browser",
+        "type": "OpcUa-Browser",
+        "z": "tab_flux3",
+        "endpoint": "opcua_server_endpoint",
+        "datatype": "",
+        "topic": "",
+        "items": [],
+        "name": "OPC UA Browser",
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "debug_opcua"
+            ]
+        ]
+    },
+    {
+        "id": "debug_opcua",
+        "type": "debug",
+        "z": "tab_flux3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 760,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "opcua_server",
+        "type": "OpcUa-Server",
+        "z": "tab_flux3",
+        "port": "54845",
+        "name": "Dessalement OPC UA Server",
+        "endpoint": "",
+        "allowAnonymous": true,
+        "x": 480,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "comment_telegram",
+        "type": "comment",
+        "z": "tab_flux4",
+        "name": "Notifications & Alertes Telegram",
+        "info": "",
+        "x": 520,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "inject_15sec",
+        "type": "inject",
+        "z": "tab_flux4",
+        "name": "Toutes les 15 sec",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "func_simulate_flux4"
+            ]
+        ]
+    },
+    {
+        "id": "func_simulate_flux4",
+        "type": "function",
+        "z": "tab_flux4",
+        "name": "Simuler capteurs (variation)",
+        "func": "// Simulate sensor values with variation\nvar pression_hp = +(Math.random() * 5).toFixed(1);\nvar debit_feed  = +(Math.random() * 15).toFixed(1);\nvar salinite    = +(750 + Math.random() * 100).toFixed(0);\nvar niveau      = +(48 + Math.random() * 10).toFixed(1);\nvar temperature = +(27 + Math.random() * 2).toFixed(2);\n\nmsg.payload = {\n    pression_hp: pression_hp,\n    debit_feed:  debit_feed,\n    salinite:    salinite,\n    niveau:      niveau,\n    temperature: temperature\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 280,
+        "wires": [
+            [
+                "func_format_sms"
+            ]
+        ]
+    },
+    {
+        "id": "func_format_sms",
+        "type": "function",
+        "z": "tab_flux4",
+        "name": "Format SMS Dessalement",
+        "func": "var d = msg.payload;\nvar alarmes = [];\nvar niveau_alerte = \"NORMAL\";\nvar etat = \"NORMAL\";\n\n// Alarm thresholds\nif (d.salinite > 600) {\n    alarmes.push(\"🔴 CRITIQUE: Salinité = \" + d.salinite + \" ppm (>600)\");\n    niveau_alerte = \"CRITICAL\";\n    etat = \"STARTING\";\n}\nif (d.pression_hp > 60) {\n    alarmes.push(\"⚠️ WARNING: Pression HP = \" + d.pression_hp + \" bar (>60)\");\n    if (niveau_alerte !== \"CRITICAL\") niveau_alerte = \"WARNING\";\n}\nif (d.debit_feed < 2) {\n    alarmes.push(\"⚠️ WARNING: Débit faible = \" + d.debit_feed + \" m³/h (<2)\");\n    if (niveau_alerte !== \"CRITICAL\") niveau_alerte = \"WARNING\";\n}\nif (d.temperature > 35) {\n    alarmes.push(\"⚠️ WARNING: Température = \" + d.temperature + \" °C (>35)\");\n    if (niveau_alerte !== \"CRITICAL\") niveau_alerte = \"WARNING\";\n}\n\n// Log alarm details to context\nnode.warn(alarmes.length + \" alarme(s): \" + alarmes.join(\" | \"));\n\nvar texte = \"\";\nif (alarmes.length === 0) {\n    texte = \"✅ Système nominal\\n\";\n    texte += \"💧 Salinité: \" + d.salinite + \" ppm\\n\";\n    texte += \"📊 Débit: \" + d.debit_feed + \" m³/h\\n\";\n    texte += \"🌡️ Temp: \" + d.temperature + \" °C\\n\";\n    texte += \"📈 Niveau: \" + d.niveau + \" %\\n\";\n    texte += \"⏱️ \" + new Date().toLocaleTimeString();\n} else {\n    texte = \"🚨 ALERTE DESSALEMENT\\n\";\n    texte += \"━━━━━━━━━━━━━━━━\\n\";\n    alarmes.forEach(function(a) { texte += a + \"\\n\"; });\n    texte += \"━━━━━━━━━━━━━━━━\\n\";\n    texte += \"💧 Salinité: \" + d.salinite + \" ppm\\n\";\n    texte += \"📊 Débit: \" + d.debit_feed + \" m³/h\\n\";\n    texte += \"🌡️ Temp: \" + d.temperature + \" °C\\n\";\n    texte += \"📈 Niveau: \" + d.niveau + \" %\\n\";\n    texte += \"⏱️ \" + new Date().toLocaleTimeString();\n}\n\nmsg.payload = {\n    chatId: parseInt(env.get(\"TELEGRAM_CHAT_ID\") || \"0\"),\n    type: \"message\",\n    content: texte\n};\n\n// Also store alarm state for other nodes\nflow.set(\"alarm_state\", {\n    niveau: niveau_alerte,\n    count: alarmes.length,\n    details: alarmes,\n    etat: etat,\n    timestamp: new Date().toTimeString().slice(0,8)\n});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "telegram_send_notif"
+            ]
+        ]
+    },
+    {
+        "id": "telegram_send_notif",
+        "type": "telegram sender",
+        "z": "tab_flux4",
+        "name": "Envoyer Notification",
+        "bot": "telegram_bot_config",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 860,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "telegram_receive",
+        "type": "telegram receiver",
+        "z": "tab_flux4",
+        "name": "Recevoir Message",
+        "bot": "telegram_bot_config",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "inputs": 0,
+        "x": 140,
+        "y": 340,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "telegram_receive_cmd",
+        "type": "telegram receiver",
+        "z": "tab_flux4",
+        "name": "Recevoir Commandes User",
+        "bot": "telegram_bot_config",
+        "saveDataDir": "",
+        "filterCommands": true,
+        "inputs": 0,
+        "x": 150,
+        "y": 420,
+        "wires": [
+            [
+                "func_routeur"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "func_routeur",
+        "type": "function",
+        "z": "tab_flux4",
+        "name": "Routeur Commandes Telegram",
+        "func": "// Route commands to appropriate handlers\nvar cmd = msg.payload.content;\nvar chatId = msg.payload.chatId;\n\nmsg.chatId = chatId;\n\nif (cmd === \"/start\") {\n    msg.route = \"start\";\n    return [msg, null, null, null];\n} else if (cmd === \"/status\") {\n    msg.route = \"status\";\n    return [null, msg, null, null];\n} else if (cmd === \"/demarrer\") {\n    msg.route = \"demarrer\";\n    return [null, null, msg, null];\n} else if (cmd === \"/arreter\") {\n    msg.route = \"arreter\";\n    return [null, null, null, msg];\n} else {\n    // Unknown command\n    msg.payload = {\n        chatId: chatId,\n        type: \"message\",\n        content: \"❓ Commande inconnue. Utilisez:\\n/start - Démarrer\\n/status - État système\\n/demarrer - Démarrer la pompe\\n/arreter - Arrêter la pompe\"\n    };\n    return [null, null, null, null];\n}",
+        "outputs": 4,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 600,
+        "wires": [
+            [
+                "func_cmd_start"
+            ],
+            [
+                "func_cmd_status"
+            ],
+            [
+                "func_cmd_demarrer"
+            ],
+            [
+                "func_cmd_arreter"
+            ]
+        ]
+    },
+    {
+        "id": "func_cmd_start",
+        "type": "function",
+        "z": "tab_flux4",
+        "name": "Commande /start",
+        "func": "msg.payload = {\n    chatId: msg.chatId,\n    type: \"message\",\n    content: \"👋 Bonjour! Système de surveillance Dessalement actif.\\n\\nCommandes disponibles:\\n/status - État du système\\n/demarrer - Démarrer la pompe\\n/arreter - Arrêter la pompe\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 360,
+        "wires": [
+            [
+                "telegram_send_reponse"
+            ]
+        ]
+    },
+    {
+        "id": "func_cmd_status",
+        "type": "function",
+        "z": "tab_flux4",
+        "name": "Commande /status",
+        "func": "var state = flow.get(\"alarm_state\") || { niveau: \"INCONNU\", count: 0, details: [], etat: \"INCONNU\", timestamp: \"--\" };\n\nvar icon = state.niveau === \"CRITICAL\" ? \"🔴\" : state.niveau === \"WARNING\" ? \"🟡\" : \"🟢\";\n\nmsg.payload = {\n    chatId: msg.chatId,\n    type: \"message\",\n    content: icon + \" État système: \" + state.niveau + \"\\n\" +\n             \"📊 Alarmes actives: \" + state.count + \"\\n\" +\n             \"⚙️ État: \" + state.etat + \"\\n\" +\n             \"⏱️ Mis à jour: \" + state.timestamp\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 420,
+        "wires": [
+            [
+                "telegram_send_reponse"
+            ]
+        ]
+    },
+    {
+        "id": "func_cmd_demarrer",
+        "type": "function",
+        "z": "tab_flux4",
+        "name": "Commande /demarrer",
+        "func": "// Send START command to PLC\nflow.set(\"plc_command\", \"START\");\n\nmsg.payload = {\n    chatId: msg.chatId,\n    type: \"message\",\n    content: \"▶️ Commande DÉMARRER envoyée au PLC.\"\n};\n\nmsg.plc_cmd = { command: \"START\", timestamp: Date.now() };\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 480,
+        "wires": [
+            [
+                "telegram_send_reponse",
+                "inject_send_start"
+            ]
+        ]
+    },
+    {
+        "id": "func_cmd_arreter",
+        "type": "function",
+        "z": "tab_flux4",
+        "name": "Commande /arreter",
+        "func": "// Send STOP command to PLC\nflow.set(\"plc_command\", \"STOP\");\n\nmsg.payload = {\n    chatId: msg.chatId,\n    type: \"message\",\n    content: \"⏹️ Commande ARRÊTER envoyée au PLC.\"\n};\n\nmsg.plc_cmd = { command: \"STOP\", timestamp: Date.now() };\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 540,
+        "wires": [
+            [
+                "telegram_send_reponse",
+                "inject_send_stop"
+            ]
+        ]
+    },
+    {
+        "id": "telegram_send_reponse",
+        "type": "telegram sender",
+        "z": "tab_flux4",
+        "name": "Envoyer Réponse Telegram",
+        "bot": "telegram_bot_config",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 855,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "inject_send_start",
+        "type": "inject",
+        "z": "tab_flux4",
+        "name": "→ Send START to PLC",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0,
+        "topic": "",
+        "payload": "{\"command\":\"START\"}",
+        "payloadType": "json",
+        "x": 770,
+        "y": 580,
+        "wires": [
+            [
+                "debug_cmd_plc"
+            ]
+        ]
+    },
+    {
+        "id": "inject_send_stop",
+        "type": "inject",
+        "z": "tab_flux4",
+        "name": "→ Send STOP to PLC",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0,
+        "topic": "",
+        "payload": "{\"command\":\"STOP\"}",
+        "payloadType": "json",
+        "x": 490,
+        "y": 640,
+        "wires": [
+            [
+                "debug_cmd_plc"
+            ]
+        ]
+    },
+    {
+        "id": "debug_cmd_plc",
+        "type": "debug",
+        "z": "tab_flux4",
+        "name": "CMD PLC Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1010,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "764a1e395e447a81",
+        "type": "inject",
+        "z": "5e056b6d48b86e68",
+        "name": "Toutes les 2 sec",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "7e4e53099f215674"
+            ]
+        ]
+    },
+    {
+        "id": "7e4e53099f215674",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Simuler capteurs (variation)",
+        "func": "var t = Date.now() / 1000;\n\nvar pression_hp  = 5  + Math.sin(t/30)  * 1.5 + (Math.random()-0.5)*0.3;\nvar debit_feed   = 15 + Math.sin(t/20)  * 3   + (Math.random()-0.5)*0.5;\nvar salinite     = 350 + Math.sin(t/60) * 50  + (Math.random()-0.5)*20;\nvar niveau       = 60  + Math.sin(t/45) * 15  + (Math.random()-0.5)*2;\nvar temperature  = 26  + Math.sin(t/120)* 2   + (Math.random()-0.5)*0.3;\nvar rendement    = parseFloat((debit_feed/20*100).toFixed(1));\n\nmsg.payload = {\n    pression_hp : parseFloat(pression_hp.toFixed(2)),\n    debit_feed  : parseFloat(debit_feed.toFixed(2)),\n    salinite    : parseFloat(salinite.toFixed(1)),\n    niveau      : parseFloat(niveau.toFixed(1)),\n    temperature : parseFloat(temperature.toFixed(1)),\n    rendement   : rendement\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "e42072fba6ee3097",
+                "e3ba73a2d71dc0a2",
+                "0304ab3cb119c57c",
+                "7df844a958606143"
+            ]
+        ]
+    },
+    {
+        "id": "e42072fba6ee3097",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Format MQTT ThingsBoard",
+        "func": "var d = msg.payload;\n\n// Payload minimal — seulement les valeurs numériques\nvar data = {\n    pression_hp : d.pression_hp,\n    debit_feed  : d.debit_feed,\n    salinite    : d.salinite,\n    niveau      : d.niveau,\n    temperature : d.temperature,\n    rendement   : d.rendement\n};\n\nmsg.payload = JSON.stringify(data);\nmsg.topic   = \"v1/devices/me/telemetry\";\nmsg.qos     = 1;\nmsg.retain  = false;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 40,
+        "wires": [
+            [
+                "d52bcb462371963b"
+            ]
+        ]
+    },
+    {
+        "id": "d52bcb462371963b",
+        "type": "mqtt out",
+        "z": "5e056b6d48b86e68",
+        "name": "MQTT → ThingsBoard",
+        "topic": "v1/devices/me/telemetry",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "884eb97760416cdb",
+        "x": 980,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e3ba73a2d71dc0a2",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Alarmes Détaillées",
+        "func": "var d = msg.payload;\nvar alarmes = [];\nvar count = 0;\n\n// --- Seuils critiques (rapport chapitre 2) ---\nif (d.pression_hp > 75) {\n    alarmes.push({ niveau:\"CRITIQUE\", msg:\"Pression HP trop haute: \"+d.pression_hp+\" bar (>75)\" });\n    count++;\n}\nif (d.pression_hp < 20) {\n    alarmes.push({ niveau:\"CRITIQUE\", msg:\"Pression HP trop basse: \"+d.pression_hp+\" bar (<20)\" });\n    count++;\n}\nif (d.salinite > 600) {\n    alarmes.push({ niveau:\"CRITIQUE\", msg:\"Salinité = \"+d.salinite+\" ppm (>600)\" });\n    count++;\n}\nif (d.niveau < 10) {\n    alarmes.push({ niveau:\"WARNING\",  msg:\"Niveau bas réservoir collecteur: \"+d.niveau+\"%\" });\n    count++;\n}\nif (d.debit_feed < 5) {\n    alarmes.push({ niveau:\"WARNING\",  msg:\"Débit alimentation faible: \"+d.debit_feed+\" L/min\" });\n    count++;\n}\nif (d.temperature > 40) {\n    alarmes.push({ niveau:\"WARNING\",  msg:\"Température élevée: \"+d.temperature+\" °C\" });\n    count++;\n}\n\nvar etatGlobal = \"NORMAL\";\nif (count > 0) {\n    etatGlobal = alarmes.some(a => a.niveau === \"CRITIQUE\") ? \"CRITIQUE\" : \"WARNING\";\n}\n\nmsg.payload = {\n    niveau   : etatGlobal,\n    count    : count,\n    details  : alarmes,\n    etat     : \"RUNNING\",\n    timestamp: new Date().toLocaleTimeString()\n};\n\n// Publier aussi le count sur ThingsBoard\nmsg.alarm_count = count;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 120,
+        "wires": [
+            [
+                "ecba6fe02a3ae654",
+                "c2a058de95f0961e"
+            ]
+        ]
+    },
+    {
+        "id": "ecba6fe02a3ae654",
+        "type": "debug",
+        "z": "5e056b6d48b86e68",
+        "name": "Voir Alarmes",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c2a058de95f0961e",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Format Alarme MQTT",
+        "func": "var a = msg.payload;\nmsg.payload = JSON.stringify({\n    alarmes_actives : a.count,\n    etat_alarme     : a.niveau,\n    etat            : a.etat\n});\nmsg.topic = \"v1/devices/me/telemetry\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 140,
+        "wires": [
+            [
+                "d52bcb462371963b"
+            ]
+        ]
+    },
+    {
+        "id": "0304ab3cb119c57c",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Split Topics MQTT",
+        "func": "var d = msg.payload;\nvar topics = {\n    \"dessalement/capteurs/pression_hp\"  : d.pression_hp,\n    \"dessalement/capteurs/debit_feed\"   : d.debit_feed,\n    \"dessalement/capteurs/salinite\"     : d.salinite,\n    \"dessalement/capteurs/niveau\"       : d.niveau,\n    \"dessalement/capteurs/temperature\"  : d.temperature,\n    \"dessalement/systeme/rendement\"     : d.rendement,\n    \"dessalement/systeme/etat\"          : \"RUNNING\",\n    \"dessalement/alarmes/active\"        : 0,\n    \"dessalement/alarmes/count\"         : 0\n};\nvar output = [];\nfor (var topic in topics) {\n    output.push({ topic: topic, payload: String(topics[topic]) });\n}\nreturn [output];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 200,
+        "wires": [
+            [
+                "82e189354c573dbb"
+            ]
+        ]
+    },
+    {
+        "id": "82e189354c573dbb",
+        "type": "mqtt out",
+        "z": "5e056b6d48b86e68",
+        "name": "MQTT Multi-Topic",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "34b45f43fc18943b",
+        "x": 980,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7df844a958606143",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Format HTTP POST",
+        "func": "var d = msg.payload;\nmsg.payload = JSON.stringify({\n    pression_hp : d.pression_hp,\n    debit_feed  : d.debit_feed,\n    salinite    : d.salinite,\n    niveau      : d.niveau,\n    temperature : d.temperature,\n    rendement   : d.rendement\n});\nmsg.headers = { \"Content-Type\": \"application/json\" };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 280,
+        "wires": [
+            [
+                "806eb18c0822c0c8"
+            ]
+        ]
+    },
+    {
+        "id": "806eb18c0822c0c8",
+        "type": "http request",
+        "z": "5e056b6d48b86e68",
+        "name": "POST ThingsBoard HTTP",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:8080/api/v1/r697sk1p7g53yzsne35r/telemetry",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 980,
+        "y": 280,
+        "wires": [
+            [
+                "04686c61139ff4ef"
+            ]
+        ]
+    },
+    {
+        "id": "04686c61139ff4ef",
+        "type": "debug",
+        "z": "5e056b6d48b86e68",
+        "name": "Réponse HTTP",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "77876dea51b09f90",
+        "type": "debug",
+        "z": "5e056b6d48b86e68",
+        "name": "Voir valeurs simulées",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "9d7f9d8f467a9254",
+        "type": "inject",
+        "z": "5e056b6d48b86e68",
+        "name": "Toutes les 15 sec",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 2,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 520,
+        "wires": [
+            [
+                "916cfa51e116f3f0"
+            ]
+        ]
+    },
+    {
+        "id": "916cfa51e116f3f0",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Simuler capteurs (variation)",
+        "func": "var t = Date.now() / 1000;\nvar pression_hp  = 5  + Math.sin(t/30)  * 1.5 + (Math.random()-0.5)*0.3;\nvar debit_feed   = 15 + Math.sin(t/20)  * 3   + (Math.random()-0.5)*0.5;\nvar salinite     = 350 + Math.sin(t/60) * 50  + (Math.random()-0.5)*20;\nvar niveau       = 60  + Math.sin(t/45) * 15  + (Math.random()-0.5)*2;\nvar temperature  = 26  + Math.sin(t/120)* 2   + (Math.random()-0.5)*0.3;\nmsg.payload = {\n    pression_hp : parseFloat(pression_hp.toFixed(2)),\n    debit_feed  : parseFloat(debit_feed.toFixed(2)),\n    salinite    : parseFloat(salinite.toFixed(1)),\n    niveau      : parseFloat(niveau.toFixed(1)),\n    temperature : parseFloat(temperature.toFixed(1))\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 520,
+        "wires": [
+            [
+                "bcb8f5f082c1507b"
+            ]
+        ]
+    },
+    {
+        "id": "bcb8f5f082c1507b",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Format SMS Dessalement",
+        "func": "var d = msg.payload;\nvar txt = \"🏭 *Système Dessalement Mobile*\\n\";\ntxt += \"📅 \" + new Date().toLocaleString('fr-FR') + \"\\n\\n\";\ntxt += \"⚙️ *Mesures temps réel :*\\n\";\ntxt += \"🔵 Pression HP: \" + d.pression_hp + \" bar\\n\";\ntxt += \"💧 Débit Feed: \" + d.debit_feed + \" L/min\\n\";\ntxt += \"🧂 Salinité: \" + d.salinite + \" ppm\\n\";\ntxt += \"📊 Niveau Eau: \" + d.niveau + \"%\\n\";\ntxt += \"🌡️ Température: \" + d.temperature + \" °C\\n\";\n\nif (d.salinite > 600) txt += \"\\n🔴 *ALERTE CRITIQUE : Salinité Haute !*\";\nif (d.pression_hp < 2) txt += \"\\n🟠 *AVERTISSEMENT : Pression Basse !*\";\nif (d.niveau < 10)    txt += \"\\n🟠 *AVERTISSEMENT : Niveau Bas !*\";\n\n// --- REMPLACER PAR VOTRE CHAT ID ---\nmsg.payload = {\n    chatId  : \"VOTRE_CHAT_ID\",\n    type    : \"message\",\n    content : txt,\n    options : { parse_mode: \"Markdown\" }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 520,
+        "wires": [
+            [
+                "d81a0b50dbd2c670"
+            ]
+        ]
+    },
+    {
+        "id": "d81a0b50dbd2c670",
+        "type": "telegram sender",
+        "z": "5e056b6d48b86e68",
+        "name": "Envoyer Notification",
+        "bot": "telegram_bot_config",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 520,
+        "wires": [
+            [
+                "d1762f76cc4cf3c1"
+            ]
+        ]
+    },
+    {
+        "id": "d1762f76cc4cf3c1",
+        "type": "debug",
+        "z": "5e056b6d48b86e68",
+        "name": "Debug TG",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "41d668c3105903c5",
+        "type": "telegram receiver",
+        "z": "5e056b6d48b86e68",
+        "name": "Recevoir Commandes User",
+        "bot": "telegram_bot_config",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "inputs": 0,
+        "x": 230,
+        "y": 640,
+        "wires": [
+            [
+                "740dc0a033a0392b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "740dc0a033a0392b",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Routeur Commandes Telegram",
+        "func": "var text   = msg.payload.content;\nvar chatId = msg.payload.chatId;\n\nif (text === \"/start\") {\n    msg.payload = {\n        chatId  : chatId,\n        type    : \"message\",\n        content : \"✅ *Bot Dessalement Actif!*\\n\\nCommandes disponibles:\\n/status — État du système\\n/demarrer — Démarrer la station\\n/arreter — Arrêter la station\",\n        options : { parse_mode: \"Markdown\" }\n    };\n    return [msg, null, null, null];\n\n} else if (text === \"/status\") {\n    var t = Date.now()/1000;\n    var ph = (5 + Math.sin(t/30)*1.5).toFixed(2);\n    var df = (15 + Math.sin(t/20)*3).toFixed(2);\n    var sa = (350 + Math.sin(t/60)*50).toFixed(1);\n    var nv = (60 + Math.sin(t/45)*15).toFixed(1);\n    var te = (26 + Math.sin(t/120)*2).toFixed(1);\n    var statusTxt = \"📊 *ÉTAT SYSTÈME*\\n\";\n    statusTxt += \"Pression HP : \" + ph + \" bar\\n\";\n    statusTxt += \"Débit Feed  : \" + df + \" L/min\\n\";\n    statusTxt += \"Salinité    : \" + sa + \" ppm\\n\";\n    statusTxt += \"Niveau      : \" + nv + \"%\\n\";\n    statusTxt += \"Température : \" + te + \" °C\\n\";\n    statusTxt += \"\\n✅ Système : RUNNING\";\n    msg.payload = { chatId: chatId, type: \"message\", content: statusTxt, options: { parse_mode: \"Markdown\" } };\n    return [msg, null, null, null];\n\n} else if (text === \"/demarrer\") {\n    var cmdMsg = { payload: { cmd: \"START\", chatId: chatId } };\n    var replyMsg = { payload: { chatId: chatId, type: \"message\", content: \"🟢 Commande DÉMARRAGE envoyée au PLC\", options: {} } };\n    return [replyMsg, cmdMsg, null, null];\n\n} else if (text === \"/arreter\") {\n    var cmdMsg2 = { payload: { cmd: \"STOP\", chatId: chatId } };\n    var replyMsg2 = { payload: { chatId: chatId, type: \"message\", content: \"🔴 Commande ARRÊT envoyée au PLC\", options: {} } };\n    return [replyMsg2, null, cmdMsg2, null];\n\n} else {\n    msg.payload = { chatId: chatId, type: \"message\", content: \"❓ Commande inconnue.\\nTapez /start pour voir les commandes.\", options: {} };\n    return [msg, null, null, null];\n}",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 640,
+        "wires": [
+            [
+                "f4eb893aba8f6be1"
+            ],
+            [
+                "e99706145a19918f"
+            ],
+            [
+                "21d8217ca49fcf78"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f4eb893aba8f6be1",
+        "type": "telegram sender",
+        "z": "5e056b6d48b86e68",
+        "name": "Réponse Telegram",
+        "bot": "telegram_bot_config",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 800,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e99706145a19918f",
+        "type": "debug",
+        "z": "5e056b6d48b86e68",
+        "name": "→ Send START to PLC",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "21d8217ca49fcf78",
+        "type": "debug",
+        "z": "5e056b6d48b86e68",
+        "name": "→ Send STOP to PLC",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ccbbc4840bb7240d",
+        "type": "OpcUa-Client",
+        "z": "5e056b6d48b86e68",
+        "endpoint": "opc.tcp://192.168.1.100:4840",
+        "action": "subscribe",
+        "deadbandtype": "a",
+        "deadbandvalue": "1",
+        "time": "1000",
+        "timeUnit": "ms",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "OPC UA Client → PLC",
+        "x": 230,
+        "y": 800,
+        "wires": [
+            [
+                "394af930ec2a13d2",
+                "546876641877030b"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "394af930ec2a13d2",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Extraire variables PLC",
+        "func": "// Les données arrivent du serveur OPC UA du S7-1215C\n// Adapter les index selon votre configuration OPC UA\nvar raw = msg.payload;\n\nvar data = {\n    pression_hp : raw[0] ? parseFloat(raw[0].value.toFixed(2)) : 0,\n    debit_feed  : raw[1] ? parseFloat(raw[1].value.toFixed(2)) : 0,\n    salinite    : raw[2] ? parseFloat(raw[2].value.toFixed(1)) : 0,\n    niveau      : raw[3] ? parseFloat(raw[3].value.toFixed(1)) : 0,\n    temperature : raw[4] ? parseFloat(raw[4].value.toFixed(1)) : 0\n};\n\nmsg.payload = JSON.stringify(data);\nmsg.topic = \"v1/devices/me/telemetry\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 780,
+        "wires": [
+            [
+                "d52bcb462371963b"
+            ]
+        ]
+    },
+    {
+        "id": "546876641877030b",
+        "type": "debug",
+        "z": "5e056b6d48b86e68",
+        "name": "Valeurs PLC Réel",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "174d524b7335c9ab",
+        "type": "inject",
+        "z": "5e056b6d48b86e68",
+        "name": "horodatage",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 940,
+        "wires": [
+            [
+                "e0c955bd6dd32f73"
+            ]
+        ]
+    },
+    {
+        "id": "e0c955bd6dd32f73",
+        "type": "OpcUa-Server",
+        "z": "5e056b6d48b86e68",
+        "port": "4841",
+        "name": "Dessalement OPC UA Server",
+        "endpoint": "",
+        "x": 470,
+        "y": 940,
+        "wires": [
+            [
+                "88528576f46e2078"
+            ]
+        ]
+    },
+    {
+        "id": "88528576f46e2078",
+        "type": "debug",
+        "z": "5e056b6d48b86e68",
+        "name": "debug OPC UA",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "551cc89e5b0d0b10",
+        "type": "mqtt in",
+        "z": "5e056b6d48b86e68",
+        "name": "Commandes ThingsBoard → PLC",
+        "topic": "v1/devices/me/rpc/request/+",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "884eb97760416cdb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 1440,
+        "wires": [
+            [
+                "5d5aa34aa1da9916"
+            ]
+        ]
+    },
+    {
+        "id": "5d5aa34aa1da9916",
+        "type": "function",
+        "z": "5e056b6d48b86e68",
+        "name": "Traiter CMD Web",
+        "func": "var cmd = msg.payload;\nnode.warn(\"Commande reçue depuis ThingsBoard: \" + JSON.stringify(cmd));\n\nif (cmd.method === \"setValue\") {\n    if (cmd.params && cmd.params.cmd === \"START\") {\n        msg.payload = { action: \"START\", source: \"ThingsBoard\" };\n    } else if (cmd.params && cmd.params.cmd === \"STOP\") {\n        msg.payload = { action: \"STOP\", source: \"ThingsBoard\" };\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1440,
+        "wires": [
+            [
+                "10e14fa083d529ab"
+            ]
+        ]
+    },
+    {
+        "id": "10e14fa083d529ab",
+        "type": "debug",
+        "z": "5e056b6d48b86e68",
+        "name": "Cmd",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "6c0abd84b4c7268f",
+        "type": "inject",
+        "z": "5e056b6d48b86e68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 860,
+        "y": 420,
+        "wires": [
+            [
+                "806eb18c0822c0c8"
+            ]
+        ]
+    },
+    {
+        "id": "b46911ec9d18a569",
+        "type": "mqtt in",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "MQTT MW Input",
+        "topic": "home/pi69/temp/value26",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1bc2abe7f9459d9b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 220,
+        "y": 180,
+        "wires": [
+            [
+                "480174b03da940bc"
+            ]
+        ]
+    },
+    {
+        "id": "22866ac41e1d7feb",
+        "type": "inject",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Auto-Init Table",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "x": 220,
+        "y": 120,
+        "wires": [
+            [
+                "422dea1a67b37847"
+            ]
+        ]
+    },
+    {
+        "id": "422dea1a67b37847",
+        "type": "function",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "SQL Create",
+        "func": "msg.topic = \"CREATE TABLE IF NOT EXISTS MW_values (id INTEGER PRIMARY KEY AUTOINCREMENT, value REAL, timestamp DATETIME)\";\nreturn msg;",
+        "outputs": 1,
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "f3b20789d8e7f1d6"
+            ]
+        ]
+    },
+    {
+        "id": "480174b03da940bc",
+        "type": "function",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Filter 0-450 & Prep",
+        "func": "let mw = parseFloat(msg.payload);\n\n// 1. Validation: Only 0 to 450 allowed\nif (isNaN(mw) || mw < 0 || mw > 450) {\n    node.status({fill:\"red\", shape:\"dot\", text: \"Invalid: \" + msg.payload});\n    return null;\n}\n\n// 2. Prepare Database Insert\nlet ts = new Date().toISOString();\nmsg.topic = \"INSERT INTO MW_values (value, timestamp) VALUES (\" + mw + \", '\" + ts + \"')\";\n\nnode.status({fill:\"green\", shape:\"ring\", text: \"Saved: \" + mw + \" MW\"});\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "0102ba1a1dedfc56"
+            ]
+        ]
+    },
+    {
+        "id": "0102ba1a1dedfc56",
+        "type": "delay",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Rate Limit (5 min)",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 180,
+        "wires": [
+            [
+                "f3b20789d8e7f1d6"
+            ]
+        ]
+    },
+    {
+        "id": "45e1977a55e5b6bb",
+        "type": "inject",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Manual Courbe",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "7acb470dbbe34f1e"
+            ]
+        ]
+    },
+    {
+        "id": "7acb470dbbe34f1e",
+        "type": "function",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "MW Manual Trigger",
+        "func": "msg.chatId = \"1132245782\";\nmsg.triggerChatId = \"1132245782\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "e50d683edc3ecd2c"
+            ]
+        ]
+    },
+    {
+        "id": "2f7e0af2af3e21be",
+        "type": "http request",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Generate PNG",
+        "method": "POST",
+        "ret": "bin",
+        "url": "https://quickchart.io/chart?width=1300&height=500",
+        "x": 1160,
+        "y": 240,
+        "wires": [
+            [
+                "9d2698b51d6ea29a"
+            ]
+        ]
+    },
+    {
+        "id": "d75002965260fde9",
+        "type": "inject",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Every 00:00",
+        "props": [],
+        "repeat": "",
+        "crontab": "59 23 * * *",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "1383b26c1007a6bc"
+            ]
+        ]
+    },
+    {
+        "id": "1383b26c1007a6bc",
+        "type": "function",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "MW Auto Trigger",
+        "func": "msg.chatId = \"1132245782\";\nmsg.triggerChatId = \"1132245782\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "e50d683edc3ecd2c"
+            ]
+        ]
+    },
+    {
+        "id": "d0c943db3f790af0",
+        "type": "inject",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Trigger Effacer 00:02",
+        "props": [],
+        "repeat": "",
+        "crontab": "00 00 * * *",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "x": 210,
+        "y": 360,
+        "wires": [
+            [
+                "7447323c658c3774"
+            ]
+        ]
+    },
+    {
+        "id": "7447323c658c3774",
+        "type": "function",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "SQL Clear Command",
+        "func": "msg.topic = \"DELETE FROM MW_values;\";\nreturn msg;",
+        "outputs": 1,
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "f63ffc313e69f1db"
+            ]
+        ]
+    },
+    {
+        "id": "bf1ab88a6cc34e98",
+        "type": "function",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "SQL VACUUM",
+        "func": "msg.topic = \"VACUUM;\";\nreturn msg;",
+        "outputs": 1,
+        "x": 790,
+        "y": 360,
+        "wires": [
+            [
+                "0f0843ff2e856dee"
+            ]
+        ]
+    },
+    {
+        "id": "9d2698b51d6ea29a",
+        "type": "function",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Tele Photo Prep",
+        "func": "let now = new Date().toLocaleString('fr-FR', { timeZone: 'Africa/Tunis' });\n\n// Récupérer le chatId depuis le message de déclenchement\nlet chatId = msg.chatId || msg.triggerChatId || \"1132245782\";\n\n// Vérifier que le contenu est bien un Buffer d'image\nif (!msg.payload || !Buffer.isBuffer(msg.payload)) {\n    node.warn(\"Pas d'image valide reçue\");\n    return null;\n}\n\nmsg.payload = {\n    chatId: chatId,\n    type: \"photo\",\n    content: msg.payload,\n    caption: \"📈 MW Production Sousse D\\n📅 Rapport Journalier: \" + now + \"\\n\",\n    options: {\n        reply_markup: {\n            inline_keyboard: [\n                [{ text: \"⬅️ Retour Courbes\", callback_data: \"COURBES\" }],\n                [{ text: \"⬅️ Retour Menu Principal\", callback_data: \"MENU\" }]\n            ]\n        }\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 240,
+        "wires": [
+            [
+                "7e9a0d98ea62cff7"
+            ]
+        ]
+    },
+    {
+        "id": "e50d683edc3ecd2c",
+        "type": "function",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Robust 24h Query",
+        "func": "// Calcul du jour calendaire en heure Tunisie (UTC+1)\nlet now = new Date();\nlet tunis = new Date(now.toLocaleString('en-US', { timeZone: 'Africa/Tunis' }));\nlet year = tunis.getFullYear();\nlet month = String(tunis.getMonth() + 1).padStart(2, '0');\nlet day = String(tunis.getDate()).padStart(2, '0');\n\n// Début du jour J à 00:00:00 heure Tunisie (UTC+1 = +01:00)\nlet startOfDay = new Date(year + '-' + month + '-' + day + 'T00:00:00+01:00');\nlet endOfDay   = new Date(startOfDay.getTime() + 24 * 60 * 60 * 1000);\n\nmsg.topic = \"SELECT value, timestamp FROM MW_values WHERE timestamp >= '\" \n    + startOfDay.toISOString() \n    + \"' AND timestamp < '\" \n    + endOfDay.toISOString() \n    + \"' ORDER BY timestamp ASC\";\n\n// Date pour le titre\nmsg.chartDate = day + '/' + month + '/' + year;\n\nnode.status({fill:'blue', shape:'ring', text: 'Query: ' + startOfDay.toISOString().substring(0,16) + ' UTC'});\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "5f27b1f3c88a459c"
+            ]
+        ]
+    },
+    {
+        "id": "64df5a76c425c6e6",
+        "type": "function",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Format Curve 0-450",
+        "func": "let rows = msg.payload || [];\nlet chartDate = msg.chartDate || new Date().toLocaleDateString('fr-FR', { timeZone: 'Africa/Tunis' });\nmsg.chatId = msg.chatIdSaved || msg.chatId || msg.triggerChatId || \"1132245782\";\n\nnode.status({fill:'blue', shape:'ring', text: rows.length + ' points trouvés'});\n\n// --- Heure actuelle en Tunisie ---\nlet now = new Date();\nlet tunisNow = new Date(now.toLocaleString('en-US', { timeZone: 'Africa/Tunis' }));\nlet currentHour = tunisNow.getHours();\n\n// --- Labels fixes 0h → 23h ---\nlet labels = [];\nfor (let i = 0; i < 24; i++) { labels.push(i + 'h'); }\n\n// --- Regroupement par heure (Tunisie) ---\nlet buckets = {};\nrows.forEach(row => {\n    let d = new Date(row.timestamp);\n    let local = new Date(d.toLocaleString('en-US', { timeZone: 'Africa/Tunis' }));\n    let key = local.getHours() + 'h';\n    if (!buckets[key]) buckets[key] = [];\n    buckets[key].push(parseFloat(row.value));\n});\n\n// --- Calcul MOYENNE par heure (heures futures = null) ---\nlet data = labels.map((k, index) => {\n    if (index > currentHour) return null;                          // futur → vide\n    if (!buckets[k] || buckets[k].length === 0) return null;      // pas de données\n    let sum = buckets[k].reduce((a, b) => a + b, 0);\n    return Math.round((sum / buckets[k].length) * 10) / 10;       // moyenne arrondie 1 décimale\n});\n\n// --- Comptage heures renseignées ---\nlet filledCount = data.filter(v => v !== null).length;\nlet subtitle = filledCount + '/24 heures avec données';\nif (filledCount <= 2) {\n    subtitle = '⚠️ Données insuffisantes (' + filledCount + ' heure(s)) — Vérifier MQTT/DB';\n}\n\nnode.status({fill: filledCount > 2 ? 'green' : 'yellow', shape:'ring', text: subtitle});\n\nmsg.payload = {\n    chart: {\n        type: 'line',\n        data: {\n            labels: labels,\n            datasets: [{\n                label: 'MW Production',\n                data: data,\n                borderColor: '#2ecc71',\n                backgroundColor: 'rgba(46, 204, 113, 0.12)',\n                fill: true,\n                tension: 0.3,\n                pointRadius: data.map(v => v !== null ? 5 : 0),\n                pointHoverRadius: 8,\n                pointBorderColor: '#27ae60',\n                pointBackgroundColor: '#2ecc71',\n                pointBorderWidth: 2,\n                spanGaps: false\n            }]\n        },\n        options: {\n            responsive: true,\n            maintainAspectRatio: true,\n            plugins: {\n                datalabels: {\n                    display: true,\n                    align: 'top',\n                    anchor: 'end',\n                    color: '#1a5c36',\n                    font: { size: 6, weight: 'bold' },\n                    formatter: (v) => v !== null ? v + ' MW' : ''\n                }\n            },\n            scales: {\n                xAxes: [{\n                    ticks: { autoSkip: false, maxRotation: 45, minRotation: 45, fontSize: 11 },\n                    scaleLabel: { display: true, labelString: 'Heure (Tunisie)', fontSize: 12, fontStyle: 'bold' }\n                }],\n                yAxes: [{\n                    ticks: {\n                        min: 0, max: 450, stepSize: 50,\n                        callback: (v) => v + ' MW',\n                        fontSize: 11\n                    },\n                    scaleLabel: { display: true, labelString: 'MW', fontSize: 12, fontStyle: 'bold' }\n                }]\n            },\n            title: {\n                display: true,\n                text: ['⚡ MW Production - Sousse D', chartDate, subtitle],\n                fontSize: 14,\n                fontStyle: 'bold',\n                fontColor: '#1a5c36',\n                padding: 12\n            },\n            legend: { display: true, position: 'top', labels: { fontSize: 12, usePointStyle: true } }\n        }\n    }\n};\n\nreturn msg;",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 240,
+        "wires": [
+            [
+                "2f7e0af2af3e21be"
+            ],
+            [
+                "5f27b1f3c88a459c"
+            ]
+        ]
+    },
+    {
+        "id": "7e9a0d98ea62cff7",
+        "type": "telegram sender",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "name": "Send to Telegram",
+        "bot": "telegram_bot_config",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1550,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3b20789d8e7f1d6",
+        "type": "sqlite",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "mydb": "db",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "SQLite DB",
+        "x": 930,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f27b1f3c88a459c",
+        "type": "sqlite",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "mydb": "db",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Fetch Data",
+        "x": 770,
+        "y": 240,
+        "wires": [
+            [
+                "64df5a76c425c6e6"
+            ]
+        ]
+    },
+    {
+        "id": "f63ffc313e69f1db",
+        "type": "sqlite",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "mydb": "db",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Delete DB",
+        "x": 610,
+        "y": 360,
+        "wires": [
+            [
+                "bf1ab88a6cc34e98"
+            ]
+        ]
+    },
+    {
+        "id": "0f0843ff2e856dee",
+        "type": "sqlite",
+        "z": "9197102bbb7e42ab",
+        "g": "3f417203fe8918de",
+        "mydb": "db",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Shrink File Size",
+        "x": 970,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f79875e152583a1a",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-s7": "3.1.3",
+            "node-red-dashboard": "3.6.6",
+            "node-red-contrib-opcua": "0.2.350",
+            "node-red-contrib-telegrambot": "17.1.3",
+            "node-red-node-sqlite": "1.1.1"
+        }
+    }
+]
