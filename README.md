@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub last commit](https://img.shields.io/github/last-commit/fedi/desalination-automation)](https://github.com/fedi/desalination-automation)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/downloads/)
-[![Siemens TIA Portal](https://img.shields.io/badge/Siemens%20TIA%20Portal-v17-orange)](https://new.siemens.com/global/en/products/automation/industrial-software-tia-portal.html)
+[![Siemens TIA Portal](https://img.shields.io/badge/Siemens%20TIA%20Portal-v20-orange)](https://new.siemens.com/global/en/products/automation/industrial-software-tia-portal.html)
 
 ---
 
