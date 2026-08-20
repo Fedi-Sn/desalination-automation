@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub last commit](https://img.shields.io/github/last-commit/fedi/desalination-automation)](https://github.com/fedi/desalination-automation)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/downloads/)
-[![Siemens TIA Portal](https://img.shields.io/badge/Siemens%20TIA%20Portal-v20-orange)](https://new.siemens.com/global/en/products/automation/industrial-software-tia-portal.html)
+[![Siemens TIA Portal](https://img.shields.io/badge/Siemens%20TIA%20Portal-v20-orange)]([https://new.siemens.com/global/en/products/automation/industrial-software-tia-portal.html](https://sieportal.siemens.com/en-ww/support/forum/posts/tia-portal-v20-download-link/326166))
 
 ---
 
@@ -98,8 +98,8 @@ Système complet **automatisation + supervision IoT** pour désalinisation d'eau
 
 | Domaine | Composant | Technologie | Version | Rôle |
 |---------|-----------|-------------|---------|------|
-| **Contrôle** | Automate | Siemens S7-1200 | 1200C | CPU temps réel |
-| **Programmation PLC** | IDE | TIA Portal | v17 | Développement automate |
+| **Contrôle** | Automate | Siemens S7-1200 | 1215C | CPU temps réel |
+| **Programmation PLC** | IDE | TIA Portal | v20 | Développement automate |
 | **Langage PLC** | Programmation | STEP7 / SCL | IEC 61131-3 | Logique métier |
 | **Supervision** | HMI | WinCC Unified | v15 | Interface opérateur |
 | **Protocole Temps Réel** | Communication | PROFINET | IEC 61158 | PLC ↔ Capteurs |
@@ -226,7 +226,7 @@ docker-compose up -d
 
 ```bash
 # Depuis TIA Portal :
-1. Ouvrir projet /plc-siemens/Desalination_S7-1200.ap17
+1. Ouvrir projet /plc-siemens/Desalination_S7-1200.ap20
 2. Configurer adresse IP S7-1200 (default: 192.168.1.100)
 3. Downloader programme vers automate
 4. Lancer cycle RUN
@@ -235,114 +235,7 @@ docker-compose up -d
 
 ---
 
-## 📁 Structure du Projet
 
-```
-desalination-automation/
-│
-├── 📄 README.md (ce fichier)
-├── 📄 LICENSE (MIT)
-├── 📄 ARCHITECTURE.md (détails système)
-├── 📄 SETUP_GUIDE.md (installation détaillée)
-├── 📄 TROUBLESHOOTING.md (problèmes courants)
-│
-├── 📁 plc-siemens/
-│   ├── Desalination_S7-1200.ap17 (TIA Portal Project)
-│   ├── README_PLC.md
-│   ├── Sources/
-│   │   ├── Main_Program.scl
-│   │   ├── Pressure_Control.scl
-│   │   ├── Flow_Regulation.scl
-│   │   └── Alarm_Manager.scl
-│   └── Documentation/
-│       ├── PLC_IO_List.xlsx
-│       ├── Variables_Description.docx
-│       └── Cycle_Timing_Diagram.pdf
-│
-├── 📁 scada-wincc/
-│   ├── README_SCADA.md
-│   ├── WinCC_Project.zip (Runtime project)
-│   ├── Screens/
-│   │   ├── Main_Dashboard.png
-│   │   ├── Trend_Charts.png
-│   │   ├── Alarm_Panel.png
-│   │   └── Trend_Export.png
-│   └── Scripts/
-│       ├── Alarm_Escalation.js
-│       ├── Data_Archiving.js
-│       └── Report_Generator.js
-│
-├── 📁 iot-system/
-│   ├── README_IoT.md
-│   ├── node-red/
-│   │   ├── flows.json (ALL Node-RED flows)
-│   │   ├── package.json (node-red custom nodes)
-│   │   └── README_NODERED.md (flow documentation)
-│   ├── mqtt-broker/
-│   │   ├── mosquitto.conf (MQTT configuration)
-│   │   ├── acl.txt (access control list)
-│   │   └── users.txt (credentials)
-│   ├── python-backend/
-│   │   ├── app.py (Flask main)
-│   │   ├── models.py (Database models)
-│   │   ├── routes/
-│   │   │   ├── devices.py
-│   │   │   ├── data.py
-│   │   │   ├── alarms.py
-│   │   │   └── users.py
-│   │   ├── mqtt_client.py
-│   │   ├── requirements.txt
-│   │   └── README_BACKEND.md
-│   └── react-frontend/
-│       ├── src/
-│       │   ├── components/
-│       │   │   ├── Dashboard.jsx
-│       │   │   ├── TrendChart.jsx
-│       │   │   ├── AlarmPanel.jsx
-│       │   │   └── ControlPanel.jsx
-│       │   ├── pages/
-│       │   ├── services/
-│       │   └── App.jsx
-│       ├── package.json
-│       └── README_FRONTEND.md
-│
-├── 📁 raspberry-pi/
-│   ├── setup.sh (automated installation)
-│   ├── docker-compose.yml
-│   ├── scripts/
-│   │   ├── install-nodered.sh
-│   │   ├── install-mosquitto.sh
-│   │   └── test-connectivity.sh
-│   └── README_RASPPI.md
-│
-├── 📁 docker/
-│   ├── docker-compose.yml (services orchestration)
-│   ├── Dockerfile.backend
-│   ├── Dockerfile.frontend
-│   └── .env.example
-│
-├── 📁 documentation/
-│   ├── System_Architecture.pdf (diagrams)
-│   ├── Wiring_Diagram.pdf (electrical)
-│   ├── Setup_Guide.md (installation steps)
-│   ├── Operation_Manual.md (user guide)
-│   ├── Troubleshooting.md (FAQ + fixes)
-│   ├── Lessons_Learned.md (design decisions)
-│   ├── API_Documentation.md (REST endpoints)
-│   ├── MQTT_Topics.md (message structure)
-│   └── Security_Best_Practices.md
-│
-├── 📁 videos/
-│   ├── Demo_2min.mp4 (quick overview)
-│   ├── Installation_Guide.mp4
-│   ├── Operation_Tutorial.mp4
-│   └── Troubleshooting_Tips.mp4
-│
-└── 📁 tests/
-    ├── unit_tests/
-    ├── integration_tests/
-    └── performance_tests/
-```
 
 ---
 
@@ -575,19 +468,6 @@ Résultat :
 
 ---
 
-## 📚 Documentation Complète
-
-| Document | Contenu | Audience |
-|----------|---------|----------|
-| **[ARCHITECTURE.md](./documentation/ARCHITECTURE.md)** | Diagrams système complets | Tech leads |
-| **[SETUP_GUIDE.md](./documentation/SETUP_GUIDE.md)** | Installation détaillée (20 pages) | DevOps engineers |
-| **[OPERATION_MANUAL.md](./documentation/OPERATION_MANUAL.md)** | Guide utilisateur opérateur | Site operators |
-| **[API_DOCUMENTATION.md](./documentation/API_DOCUMENTATION.md)** | Tous endpoints REST | Backend developers |
-| **[MQTT_TOPICS.md](./documentation/MQTT_TOPICS.md)** | Structure messages | IoT developers |
-| **[TROUBLESHOOTING.md](./documentation/TROUBLESHOOTING.md)** | FAQ + résolution problèmes | Support engineers |
-| **[LESSONS_LEARNED.md](./documentation/LESSONS_LEARNED.md)** | Décisions architecturales | Future projects |
-
----
 
 ## 🧪 Testing & Quality Assurance
 
@@ -797,16 +677,14 @@ copies or substantial portions of the Software.
 - **Titre** : Automation Engineer | Étudiant EEA (ISSAT Mahdia)
 - **Spécialité** : Industrie 4.0, Automatisation, IoT Industriel
 - **Technologies** : Siemens TIA Portal, Python, MQTT, Raspberry Pi
-- **Localisation** : Sfax/Sousse, Tunisia 🇹🇳
+- **Localisation** : Mahdia, Tunisia 🇹🇳
 
 ### **Contacts & Socials**
 
 | Plateforme | Profil |
 |-----------|--------|
-| 📧 **Email** | fedi.snene@email.com |
-| 🔗 **LinkedIn** | linkedin.com/in/fedi-snene |
-| 🐙 **GitHub** | github.com/fedi |
-| 📱 **WhatsApp** | +216 XX XX XX XX |
+| 📧 **Email** | fedisnene0@gmail.com |
+| 🐙 **GitHub** | [github.com/fedi](https://github.com/Fediiiiiii) |
 
 ---
 
